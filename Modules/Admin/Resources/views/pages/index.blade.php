@@ -2,6 +2,7 @@
 
 @section('content')
     <h4>
-        test hello 
+        {{ auth()->user() ?? 'test user' }}
+        test hello  from admin
     </h4>
 @endsection
